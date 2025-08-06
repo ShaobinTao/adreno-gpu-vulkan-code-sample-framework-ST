@@ -2,7 +2,7 @@
 // Put configuration in here for all projects.
 
 buildscript {
-    
+
     repositories {
         mavenCentral()
         google()
@@ -22,8 +22,8 @@ allprojects {
     }
 
     // Default ndk version (should be picked up in app specific build.gradle files)
-//    project.ext.set("ndkVersionDefault", "25.0.8221429-beta2")  // "24.0.8215888")
-    project.ext.set("ndkVersionDefault", "24.0.8215888")
+    project.ext.set("ndkVersionDefault", "25.1.8937393")  // "24.0.8215888")
+//    project.ext.set("ndkVersionDefault", "24.0.8215888")
 
     // Put all build related files into a single top level build dir.
     buildDir = file("${rootDir.absolutePath}/../../build/android/${project.name}")

@@ -10,14 +10,14 @@
 ///
 /// @file application.hpp
 /// @brief Application implementation for 'empty' application.
-/// 
+///
 /// Most basic application that compiles and runs with the Vulkan Framework.
 /// DOES NOT initialize Vulkan.
-/// 
+///
 
-#include "main/frameworkApplicationBase.hpp"
+#include "main/applicationHelperBase.hpp"
 
-class Application : public FrameworkApplicationBase
+class Application : public ApplicationHelperBase
 {
 public:
     Application();

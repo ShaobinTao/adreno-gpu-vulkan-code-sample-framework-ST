@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD 20)
 # Source files included in this application.
 #
 
-set(CPP_SRC code/main/rayqueryshadows.cpp
-            code/main/rayqueryshadows.hpp
+set(CPP_SRC code/main/rayQueryShadows.cpp
+            code/main/rayQueryShadows.hpp
             code/main/materials.hpp
 )
 

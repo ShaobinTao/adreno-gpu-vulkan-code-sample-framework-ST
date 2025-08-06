@@ -19,7 +19,7 @@ FrameworkApplicationBase* Application_ConstructApplication()
     return new Application();
 }
 
-Application::Application() : FrameworkApplicationBase()
+Application::Application() : ApplicationHelperBase()
 {
 }
 

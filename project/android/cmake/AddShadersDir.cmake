@@ -9,6 +9,7 @@ find_program(
 	glslangValidator
 	DOC "Vulkan Shader Compiler (glslangValidator) (is Vulkan SDK installed?)"
 	REQUIRED
+    HINTS "~/vulkansdk-linux-x86_64-1.4.321.1/x86_64/bin/"
 )
 
 # Make sure we have the DXC compiler.  See if it is installed alngside Vulkan first.
@@ -31,6 +32,7 @@ find_program(
     dxc
     DOC "Microsoft Shader compiler (dxc) (is Vulkan SDK installed?)"
     REQUIRED
+    HINTS "~/vulkansdk-linux-x86_64-1.4.321.1/x86_64/bin/"
 )
 
 # Runs the command to get the pluginval version (more recent versions of dcx support --version, older ones dont and print the version inside -help)

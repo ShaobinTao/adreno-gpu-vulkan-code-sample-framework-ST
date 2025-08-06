@@ -1,3 +1,11 @@
+# ************************ Attention! With changes below, it builds.  But there is no display
+- In android studio, open "adreno-gpu-vulkan-code-sample-framework-ST/project/android"
+- do not upgrade gradle version. If needed,
+- change "Gradle SDK" in "File | Settings | Build, Execution, Deployment | Build Tools | Gradle" to "Jetbrains Runtime 17.0.14"
+- change ndk version from 24 to 25 for some vulkan extension submitinfo2?
+- beware that project/android/cmake/AddShadersDir.cmake has hard-coded local vulkan installation dir.
+
+
 # Vulkan Code Sample Framework
 
 The Adreno™ GPU Vulkan Code Sample Framework is a lightweight collection of C++ classes and sample projects to demonstrate Vulkan rendering features on the Qualcomm Snapdragon Adreno™ GPU.
@@ -76,7 +84,7 @@ Note: Depending on your sample you might need to perform certain steps before ru
 
 ## Running
 
-See the [Samples](samples) folder for instructions on building assets and running individual samples. 
+See the [Samples](samples) folder for instructions on building assets and running individual samples.
 
 ## Directory Structure
 

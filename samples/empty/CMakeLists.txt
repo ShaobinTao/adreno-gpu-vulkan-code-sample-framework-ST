@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CPP_SRC code/main/application.cpp
             code/main/application.hpp
 )
-set(FRAMEWORK_LIB framework)
+#set(FRAMEWORK_LIB framework)
 
 
 #

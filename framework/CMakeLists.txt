@@ -99,8 +99,8 @@ set(CPP_GENERIC_SRC
     code/system/profile.h
     code/system/timer.cpp
     code/system/timer.hpp
-    code/system/worker.cpp
-    code/system/worker.h
+    code/system/Worker.cpp
+    code/system/Worker.h
     code/texture/loaderKtx.cpp
     code/texture/loaderKtx.hpp
     code/texture/loaderPpm.cpp
@@ -358,7 +358,7 @@ if(FRAMEWORK_ENABLE_VULKAN)
 
   target_link_libraries(framework_vulkan framework)
   find_package(Vulkan REQUIRED)
-  set_target_properties(Vulkan::Vulkan PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "")   # remove the Vulkan incude paths from the local VulkanSDK 
+  set_target_properties(Vulkan::Vulkan PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "")   # remove the Vulkan incude paths from the local VulkanSDK
   target_include_directories(framework_vulkan PUBLIC external/Vulkan-Headers/include)        # point the framework to the Vulkan includes that we have as a submodule
 
   if (FRAMEWORK_WINDOWS_ARM64)
